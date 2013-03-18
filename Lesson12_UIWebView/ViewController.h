@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate>
+- (IBAction)submit:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UITextField *URLstring;
+@property (strong, nonatomic) IBOutlet UIWebView *myFirstWebView;
 
 @end
